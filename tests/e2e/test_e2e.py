@@ -1,6 +1,7 @@
 # tests/e2e/test_e2e.py
 
 import pytest  # Import the pytest framework for writing and running tests
+from playwright.sync_api import expect
 
 # The following decorators and functions define E2E tests for the FastAPI calculator application.
 
