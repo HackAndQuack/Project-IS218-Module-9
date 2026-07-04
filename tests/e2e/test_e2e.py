@@ -44,7 +44,7 @@ def test_calculator_add(page, fastapi_server):
     
     # Use an assertion to check that the text within the result div (with id 'result') is exactly "Result: 15".
     # This verifies that the addition operation was performed correctly and the result is displayed as expected.
-    expect(page.inner_text('#result')).to_have_text('Result: 15')
+    expect(page.locator('#result')).to_have_text('Result: 15')
 
 @pytest.mark.e2e
 def test_calculator_divide_by_zero(page, fastapi_server):
